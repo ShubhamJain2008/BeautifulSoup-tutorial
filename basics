@@ -1,1 +1,7 @@
+from bs4 import BeautifulSoup
 
+# HTML From File
+with open("index.html", "r") as f:
+	doc = BeautifulSoup(f, "html.parser")
+#Writes HTML code from file and prettify gives it proper indexing
+print(doc.prettify())
